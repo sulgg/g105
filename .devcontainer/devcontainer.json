@@ -24,8 +24,7 @@
 				"foxundermoon.shell-format",
 				"timonwong.shellcheck",
 				"AykutSarac.jsoncrack-vscode",
-				"redhat.vscode-yaml",
-				"tombonnike.vscode-status-bar-format-toggle"
+				"redhat.vscode-yaml"
 			],
 			"settings": {
 				"[python]": {
@@ -43,20 +42,7 @@
 						"unpkg.com",
 						"jsdelivr.com"
 					]
-				},
-				"editor.formatOnSave": true,
-				"editor.formatOnPaste": false,
-				"editor.formatOnType": false,
-				//https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle
-				"formattingToggle.affects": [
-					"editor.guides.indentation"
-				],
-				//heart icon button toggle indent guides
-				"formattingToggle.statusBarText": {
-					"formattingEnabled": "On $(heart-filled)",
-					"formattingDisabled": "Off $(heart)"
-				},
-				"editor.guides.indentation": false
+				}
 			}
 		}
 	}
