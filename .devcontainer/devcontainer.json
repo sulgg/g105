@@ -23,7 +23,8 @@
 				"mechatroner.rainbow-csv",
 				"foxundermoon.shell-format",
 				"timonwong.shellcheck",
-				"AykutSarac.jsoncrack-vscode"
+				"AykutSarac.jsoncrack-vscode",
+				"redhat.vscode-yaml"
 			],
 			"settings": {
 				"[python]": {
