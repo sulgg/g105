@@ -1,6 +1,11 @@
+channels:
+  - conda-forge
+  - defaults
+
 dependencies:
   - jupyter
   - numpy
   - matplotlib
   - psycopg2
   - pylint
+  - polars
