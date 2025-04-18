@@ -9,3 +9,4 @@ dependencies:
   - psycopg2
   - pylint
   - polars
+  - plotly
