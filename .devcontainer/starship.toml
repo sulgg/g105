@@ -1,0 +1,6 @@
+#Show conda base env when active
+[conda]
+ignore_base = false
+
+[cmd_duration]
+disabled = true
