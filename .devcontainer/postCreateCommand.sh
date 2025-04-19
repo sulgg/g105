@@ -46,3 +46,17 @@ fi
 # Create a symbolic link to .devcontainer/zshrc
 ln -s /workspaces/g105/.devcontainer/zshrc ~/.zshrc
 echo "Symbolic link to .devcontainer/zshrc created ✅"
+
+# Check if the .config folder exists
+if [ -d ~/.config ]; then
+    # Remove existing starship.toml link or file if it exists
+    if [ -f ~/.config/starship.toml ] || [ -L ~/.config/starship.toml ]; then
+        rm ~/.config/starship.toml
+        echo "Existing starship.toml removed ✅"
+    fi
+    # Create a symbolic link to .devcontainer/starship.toml
+    ln -s /workspaces/g105/.devcontainer/starship.toml ~/.config/starship.toml
+    echo "Symbolic link to .devcontainer/starship.toml created ✅"
+else
+    echo "~/.config folder does not exist ❌"
+fi
