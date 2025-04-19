@@ -35,11 +35,14 @@ sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.lis
 sudo apt update
 # Install eza
 sudo apt install -y eza
-# add eza alias to bashrc
-{
-    echo -e "alias ll='eza -l --group-directories-first'"
-    echo -e "alias l='eza --group-directories-first'"
-    echo -e "alias la='eza -la --group-directories-first'"
-} >>~/.bashrc
-# Print success message
 echo "eza installed ✅"
+
+
+# Remove the existing .zshrc file if it exists
+if [ -f ~/.zshrc ]; then
+    rm ~/.zshrc
+    echo ".zshrc removed ✅"
+fi
+# Create a symbolic link to .devcontainer/zshrc
+ln -s /workspaces/g105/.devcontainer/zshrc ~/.zshrc
+echo "Symbolic link to .devcontainer/zshrc created ✅"
