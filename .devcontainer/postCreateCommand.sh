@@ -2,6 +2,10 @@
 
 sudo apt update
 
+# https://starship.rs/
+sudo curl -sS https://starship.rs/install.sh | sh -s -- -y
+echo "starship installed ✅"
+
 # https://github.com/sharkdp/bat
 sudo apt install -y bat
 # executable may be installed as batcat instead of bat
