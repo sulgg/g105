@@ -26,7 +26,8 @@
 				"AykutSarac.jsoncrack-vscode",
 				"redhat.vscode-yaml",
 				"mtxr.sqltools",
-				"mtxr.sqltools-driver-pg"
+				"mtxr.sqltools-driver-pg",
+				"ms-python.black-formatter"
 			],
 			"settings": {
 				"terminal.integrated.defaultProfile.linux": "zsh",
@@ -34,7 +35,7 @@
 					"editor.defaultFormatter": "mtxr.sqltools"
 				},
 				"[python]": {
-					"editor.defaultFormatter": "ms-python.autopep8"
+					"editor.defaultFormatter": "ms-python.black-formatter"
 				},
 				"[jupyter]": {
 					"notebook.formatOnCellExecution": true,
