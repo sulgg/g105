@@ -58,5 +58,5 @@ if [ -d ~/.config ]; then
     ln -s /workspaces/g105/.devcontainer/starship.toml ~/.config/starship.toml
     echo "Symbolic link to .devcontainer/starship.toml created ✅"
 else
-    echo "~/.config folder does not exist ❌"
+    echo "$HOME/.config folder does not exist ❌"
 fi
